@@ -1,0 +1,51 @@
+.pulse::after,
+.pulse::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #bfc8ed;
+  left: -20px;
+  opacity: 0;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 2.5s linear infinite;
+}
+
+.pulse::after {
+  animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+
+.pulse {
+    -webkit-animation: pulses 3s infinite ease-in-out;
+    -o-animation: pulses 3s infinite ease-in-out;
+    -ms-animation: pulses 3s infinite ease-in-out; 
+    -moz-animation: pulses 3s infinite ease-in-out; 
+    animation: pulses 3s infinite ease-in-out;
+}
+@-webkit-keyframes pulses {
+    0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+    50% { -webkit-transform: scale(1); opacity: 1; }
+    100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+
+@keyframes pulses {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.7; }
+}

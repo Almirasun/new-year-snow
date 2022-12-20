@@ -1,0 +1,14 @@
+@media(max-width: 600px) {
+    .img-block {
+        width: 250px;
+        height: 250px;
+        transition: 0.5s;
+    }
+}
+@media(max-width: 400px) {
+    .img-block {
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+    }
+}
